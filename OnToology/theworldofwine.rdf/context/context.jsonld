@@ -1,0 +1,129 @@
+{
+  "@context" : {
+    "LowPrice" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice"
+    },
+    "hasPrice" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery"
+    },
+    "HighReviewRate" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country"
+    },
+    "Type" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Type"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "MediumPrice" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice"
+    },
+    "Body" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body"
+    },
+    "producedBy" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy",
+      "@type" : "@id"
+    },
+    "HighAcidity" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Price" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "YearMake" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake"
+    },
+    "MediumBodied" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied"
+    },
+    "hasBody" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MediumAcidity" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Rating"
+    },
+    "HighPrice" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice"
+    },
+    "WineName" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName"
+    },
+    "hasVintageYear" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear",
+      "@type" : "@id"
+    },
+    "LowAcidity" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity"
+    },
+    "Acidity" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity"
+    },
+    "VintageYear" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear"
+    },
+    "FullBodied" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied"
+    },
+    "hasNonVintageYear" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear",
+      "@type" : "@id"
+    },
+    "LightBodied" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied"
+    },
+    "LowReviewRate" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasYear" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear",
+      "@type" : "@id"
+    },
+    "NumReviews" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews"
+    },
+    "hasRegion" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region"
+    },
+    "Structure" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure"
+    },
+    "NonVintageYear" : {
+      "@id" : "http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear"
+    }
+  }
+}

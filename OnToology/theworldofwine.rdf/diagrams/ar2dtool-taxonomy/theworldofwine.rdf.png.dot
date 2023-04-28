@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "Theworldofwine:WineName" "Theworldofwine:NumReviews" "Theworldofwine:Structure" "Theworldofwine:Price" "Theworldofwine:Type" "Theworldofwine:Country" "Theworldofwine:HighPrice" "Theworldofwine:LowReviewRate" "Theworldofwine:Winery" "Theworldofwine:NonVintageYear" "Theworldofwine:HighAcidity" "Theworldofwine:Acidity" "Theworldofwine:YearMake" "Theworldofwine:FullBodied" "Theworldofwine:VintageYear" "Theworldofwine:MediumBodied" "Theworldofwine:Rating" "Theworldofwine:LightBodied" "Theworldofwine:LowPrice" "Theworldofwine:Body" "Theworldofwine:HighReviewRate" "Theworldofwine:LowAcidity" "Theworldofwine:MediumPrice" "Theworldofwine:Region" "Theworldofwine:MediumAcidity" ; /*classes style*/
+	"Theworldofwine:Structure" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:LightBodied" -> "Theworldofwine:Body" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:HighReviewRate" -> "Theworldofwine:NumReviews" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Winery" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Body" -> "Theworldofwine:Structure" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Region" -> "Theworldofwine:Country" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:LowPrice" -> "Theworldofwine:Price" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:NumReviews" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:HighPrice" -> "Theworldofwine:Price" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:VintageYear" -> "Theworldofwine:YearMake" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Country" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Rating" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Price" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:MediumBodied" -> "Theworldofwine:Body" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:LowAcidity" -> "Theworldofwine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:YearMake" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:FullBodied" -> "Theworldofwine:Body" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:WineName" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:NonVintageYear" -> "Theworldofwine:YearMake" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:MediumAcidity" -> "Theworldofwine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:MediumPrice" -> "Theworldofwine:Price" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:HighAcidity" -> "Theworldofwine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Acidity" -> "Theworldofwine:Structure" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:Type" -> "Theworldofwine:WineName" [ label = "rdfs:subClassOf" ];
+	"Theworldofwine:LowReviewRate" -> "Theworldofwine:NumReviews" [ label = "rdfs:subClassOf" ];
+
+}

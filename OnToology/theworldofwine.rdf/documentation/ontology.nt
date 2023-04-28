@@ -1,0 +1,568 @@
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine> <http://www.w3.org/2000/01/rdf-schema#comment> "Author dataset: fedesoriano\nAuthor PEC: Daan Vervoort" .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine> <http://www.w3.org/2000/01/rdf-schema#comment> "Spanish Wine Quality Dataset https://www.kaggle.com/datasets/fedesoriano/spanish-wine-quality-dataset" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects Wine class with Region." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasVintageYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects Wine class with Year of production." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects Wine class with Winery." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the body of the wine." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the price of the bottle of wine." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Acidity refers to the tartness, crispness, and freshness of the wine (up to 5)." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Body refers to the weight, richness, and fullness of the wine in the mouth (up to 5 points)." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of country where wine was made." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied> <http://www.w3.org/2000/01/rdf-schema#comment> "Would be in the range of 4 and 5." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Would be in the range of 4 or 5." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Equal or above 70 euros per bottle." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighReviewRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Equal or above 500." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied> <http://www.w3.org/2000/01/rdf-schema#comment> "Would be in the range of 0 and 1." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Would be in the range of 0 and 1." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Below 20 euros per bottle." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowReviewRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Below 500." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Acidity> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Would be in the range of 2 and 3." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Body> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied> <http://www.w3.org/2000/01/rdf-schema#comment> "Woudl be in the range of 2 and 3." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Equal or above 20 euros and below 70 euros per bottle." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NonVintageYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Bottles produced starting form the year 2000." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#NumReviews> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of reviews, wether in magazine or website. Aboveor equal 500 would be High_ReviewRate and below would be Low_ReviewRate." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "Pricing per bottle of wine. Low_Price would be below 20 euros, Meidum_Price equal or higher than 20 and below 70 and ultimately HIgh_Price would be equal or above 70 euros." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Rating
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of the consumer for a given wine. Maximum 5 points." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Country> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the region of the country where the wine was made." .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Region> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://data.europa.eu/data/datasets/-616e9fe9-b0b8-460c-9976-a3a89b3af2d5-_100223_es?locale=en" .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Structure> <http://www.w3.org/2000/01/rdf-schema#comment> "Structure of the particular wine." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Type
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of wine." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#VintageYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Bottles produced before the year 2000." .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the wine." .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Wine" .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of winery where wine was made." .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Winery> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://www.wikidata.org/wiki/Q156362" .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#YearMake> <http://www.w3.org/2000/01/rdf-schema#comment> "The year the particular bottle was produced. Considered vintage before the year 2000." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#CampoDeBorja
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#CampoDeBorja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2016> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#CampoDeBorja> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriSicilia> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriNavaltaGarnacha> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> "28.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriSicilia
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#PalmeriSicilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#TesoDeLaMonja
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#TesoDeLaMonja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasNonVintageYear> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2013> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasRegion> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Toro> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#producedBy> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#TesoDeLaMonja> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Tinto> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> "995.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Toro
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#Toro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2013
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2016
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#58
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid5 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumAcidity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowAcidity> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighAcidity> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid13 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid13 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/p> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/w> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#arguments> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/p> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/w> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/2003/11/swrl#head> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine/w> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#HighPrice> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid24 <http://www.w3.org/2003/11/swrl#body> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#arguments> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#arguments> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid36 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/2003/11/swrl#head> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumBodied> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid39 <http://www.w3.org/2003/11/swrl#body> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid41 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#arguments> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/2003/11/swrl#head> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LightBodied> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid50 <http://www.w3.org/2003/11/swrl#body> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid52 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#arguments> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#arguments> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid62 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/2003/11/swrl#head> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid64 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#MediumPrice> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid65 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid65 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid65 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid65 <http://www.w3.org/2003/11/swrl#body> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid67 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasPrice> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2003/11/swrl#arguments> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid73 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid65 <http://www.w3.org/2003/11/swrl#head> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid75 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#LowPrice> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid76 <http://www.w3.org/2003/11/swrl#body> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid78 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#hasBody> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2003/11/swrl#arguments> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid84 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#WineName> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid76 <http://www.w3.org/2003/11/swrl#head> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid86 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/daanvervoort/ontologies/2023/3/Theworldofwine#FullBodied> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
